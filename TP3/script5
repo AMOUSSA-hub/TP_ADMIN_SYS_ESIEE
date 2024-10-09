@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Entrez un nombre de bits: " bits
+
+	if [[ $bits -ge 0 ]]	
+	then echo $bits bits = $(($bits/8)) octets  	
+	else echo "Erreur: nombre entré inférieur à 0" 
+	fi

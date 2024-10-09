@@ -1,0 +1,12 @@
+#!/bin/bash
+declare  -i somme_octets=0
+while [[ $bits != "q" ]]  
+do
+
+	read -p "Entrez un nombre de bits: " bits
+
+		if [[ $bits -ge 0 ]]	
+		then $octets=$(($bits/8));echo $bits bits = $octets octets; somme_octets+=$(($bits/8)) 	
+		else echo "Erreur: nombre entré inférieur à 0" 
+		fi
+done
