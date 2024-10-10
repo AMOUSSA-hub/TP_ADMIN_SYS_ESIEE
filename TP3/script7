@@ -2,12 +2,12 @@
 declare  -i somme_octets=0
 
 if [[ $# != 0 ]] 
-then bits=$*
+then bits=$1
 else read -p "Entrez un nombre de bits: " bits
 
 fi	
 
-while [[ $bits != "q" ]]  
+while [[ $bits != "q" || $bits != EOF ]]  
 do
 	
 

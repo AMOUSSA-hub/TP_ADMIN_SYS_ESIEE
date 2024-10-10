@@ -1,0 +1,6 @@
+#!/bin/bash
+case $# in
+    3 ) echo ok ;;
+    0|1|2);;
+      *) echo "erreur: trop d'arguments" ;;
+esac
