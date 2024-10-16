@@ -2,7 +2,6 @@
 declare  -i somme_octets=0
 while [[ $bits != "q" ]]  
 do
-
 	read -p "Entrez un nombre de bits: " bits
 
 		if [[ $bits -ge 0 ]]	

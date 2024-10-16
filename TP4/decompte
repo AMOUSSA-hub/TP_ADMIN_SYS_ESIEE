@@ -1,0 +1,8 @@
+#!/bin/bash
+if [[ $# != 2 ]] 
+then echo "Usage: ./decompte [fichier de sortie] [répertoire visé]"
+else
+nombre_files=$(ls "$2" 2> /dev/null | wc -w)
+echo "$nombre_files" >  $1
+echo "Il y a $nombre_files fichiers dans $2"
+fi
