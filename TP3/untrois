@@ -1,0 +1,5 @@
+#!/bin/bash
+read -p "Entrez une suite de mots:" mot
+firstWord=$(echo -n $mot | cut -d " " -f 1)
+thirdWord=$(echo -n $mot | cut -d " " -f 3)
+echo $firstWord $thirdWord
